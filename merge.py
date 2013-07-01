@@ -1,7 +1,7 @@
 a=[]
 
 def mergeSort(arr,low,mid,high):
-    temp=[]
+    temp=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     l=low;
     i=low;
     m=mid+1;
