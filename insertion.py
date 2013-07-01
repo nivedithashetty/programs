@@ -6,7 +6,7 @@ for i in range(0,n):
 for i in range(1,n):
       j=i-1
       temp=a[i]
-      while a[j]>temp:
+      while a[j]>temp and j>=0:
           a[j+1]=a[j]
           j=j-1
       a[j+1]=temp
