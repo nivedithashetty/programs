@@ -1,9 +1,9 @@
-a=[0,0,0,0,0,0,0,0,0,0]
+a=[]
 temp=0
 pos=0
 n=int(raw_input("enter n"))
 for i in range (0,n):
-    a[i]=int(raw_input(" "))
+    a.append(int(raw_input(" ")))
 for i in range(0,n-1):
     pos=i
     for j in range(i+1,n):
