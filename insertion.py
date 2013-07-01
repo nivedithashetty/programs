@@ -1,8 +1,7 @@
-
-a=[0,0,0,0,0,0]
+a=[]
 n=int(raw_input("enter n"))
 for i in range(0,n):
-      a[i]=int(raw_input(" "))
+      a.append(int(raw_input(" ")))
       
 for i in range(1,n):
       j=i-1
