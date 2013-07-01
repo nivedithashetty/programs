@@ -1,7 +1,7 @@
-a=[0,0,0,0,0,0,0,0,0]
+a=[]
 
 def mergeSort(arr,low,mid,high):
-    temp=[0,0,0,0,0,0,0,0,0,0,0]
+    temp=[]
     l=low;
     i=low;
     m=mid+1;
@@ -40,7 +40,7 @@ n=int(raw_input(" "))
 
 print "Enter the elements which to be sort: "
 for i in range(0,n):
-    a[i]=int(raw_input(" "))
+    a.append(int(raw_input(" ")))
          
 partition(a,0,n-1);
 print("After merge sorting elements are: ");
