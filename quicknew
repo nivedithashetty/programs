@@ -1,0 +1,32 @@
+a=[]
+
+def quicksort(a,first,last):
+    if(first<last):
+        low=first
+        i=first
+        j=last
+        while i<j:
+            while a[i]<=a[low] and i<last:
+                i=i+1
+            while a[j]>a[low]:
+                j=j-1
+            if(i<j):
+                temp=a[i]
+                a[i]=a[j]
+                a[j]=temp
+
+        temp=a[low]
+        a[low]=a[j]
+        a[j]=temp
+        quicksort(a,first,j-1)
+        quicksort(a,j+1,last)
+
+print "enter n"
+n=int(raw_input(" "))
+print "enter array "
+for k in range(0,n):
+    a.append(int(raw_input(" ")))
+quicksort(a,0,n-1);
+print "Sorted elements: "
+for k in range(0,n):
+    print a[k]
