@@ -3,7 +3,7 @@ def partition(a,low,high):
     i=low+1
     j=high
     while i<=j:
-        while key>a[i]:
+        while key>a[i] and i<=high:
             i=i+1
         while key<a[j]:
             j=j-1
@@ -25,10 +25,10 @@ def quicksort(a,low,high):
         quicksort(a,j+1,high)
         
 
-a=[]
+a=[0,0,0,0,0,0,0,0,0,0,0]
 n=int(raw_input("enter n"))
 for i in range (0,n):
-    a.append(int(raw_input(" ")))
+    a[i]=int(raw_input(" "))
 quicksort(a,0,n-1)
 for i in range(0,n):
     print a[i]
