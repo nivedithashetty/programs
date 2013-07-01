@@ -25,10 +25,10 @@ def quicksort(a,low,high):
         quicksort(a,j+1,high)
         
 
-a=[0,0,0,0,0]
+a=[]
 n=int(raw_input("enter n"))
 for i in range (0,n):
-    a[i]=int(raw_input(" "))
+    a.append(int(raw_input(" ")))
 quicksort(a,0,n-1)
 for i in range(0,n):
     print a[i]
